@@ -11,17 +11,24 @@ public class Calculator {
         double numA = sc.nextDouble();
         System.out.print("Enter another number: ");
         double numB = sc.nextDouble();
-        System.out.print("Choose operator [+,-,/,*]");
+        System.out.println("[Add, Subtract, Divide, Multiply, Remainder]");
+        System.out.print("Choose operator [+,-,/,*,%]: ");
         String operator = sc.next();
 
-        if (operator.equals("+")) {
+        if (operator.equals("+") || operator.equalsIgnoreCase("add")) {
             System.out.println("Sum = " + (numA + numB));
-        } else if (operator.equals("-")) {
+        } else if (operator.equals("-") || operator.equalsIgnoreCase("subtract")) {
             System.out.println("Difference = " + (numA - numB));
-        } else if (operator.equals("/")) {
-            System.out.println("Quotient = " + (numA / numB));
-        } else if (operator.equals("*")) {
+        } else if (operator.equals("/") || operator.equalsIgnoreCase("divide")) {
+            if (numB == 0) {
+                System.out.println("Cannot divide by 0.");
+            } else {
+                System.out.println("Quotient = " + (numA / numB));
+            }
+        } else if (operator.equals("*") || operator.equalsIgnoreCase("multiply")) {
             System.out.println("Product = " + (numA * numB));
+        } else if (operator.equals("%") || operator.equalsIgnoreCase("remainder")) {
+            System.out.println("Remainder = " + (numA % numB));
         } else {
             System.out.println("Invalid operator!");
         }

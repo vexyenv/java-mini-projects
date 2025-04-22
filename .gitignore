@@ -1,0 +1,15 @@
+# IntelliJ project files
+.idea/
+*.iml
+
+# Build output
+out/
+
+# VS Code (in case you ever open it there)
+.vscode/
+
+# OS files
+.DS_Store
+
+# Compiled class files
+*.class

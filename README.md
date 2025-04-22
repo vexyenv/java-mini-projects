@@ -28,6 +28,7 @@ Each folder in this repository is a self-contained project designed to focus on 
 Each project is designed to help reinforce fundamental Java programming skills, such as:
 
 - Input handling using `Scanner`
+- Using `for` loops
 - String comparison and conditional logic
 - Project structuring and naming conventions
 - Command-line compilation and execution

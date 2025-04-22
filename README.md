@@ -10,6 +10,7 @@ Each folder in this repository is a self-contained project designed to focus on 
 | Project Name   | Description                        |
 |----------------|------------------------------------|
 | `login-system` | A simple console-based login system that validates user credentials. |
+| `simple-calculator` | A simple console-based text calculator. |
 
 ---
 

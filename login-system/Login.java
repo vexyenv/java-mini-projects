@@ -17,10 +17,14 @@ public class Login {
         System.out.print("Enter password: ");
         String password = sc.next();
 
-        if (username.equals(user) && password.equals(pass)) {
+        if (username.equalsIgnoreCase(user) && password.equals(pass)) {
             System.out.println("Login Successful");
+            System.out.println("Welcome back " + user);
+        } else if (username.equalsIgnoreCase(user) && !password.equals(pass)) {
+            System.out.println("Correct username, but wrong password...");
         } else {
             System.out.println("Invalid Credentials");
+            System.out.println("Forgot password, contact an admin");
         }
 
         System.out.println("---------------------");

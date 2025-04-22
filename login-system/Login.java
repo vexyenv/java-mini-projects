@@ -19,7 +19,7 @@ public class Login {
 
         if (username.equalsIgnoreCase(user) && password.equals(pass)) {
             System.out.println("Login Successful");
-            System.out.println("Welcome back " + user);
+            System.out.println("Welcome back " + user + "!");
         } else if (username.equalsIgnoreCase(user) && !password.equals(pass)) {
             System.out.println("Correct username, but wrong password...");
         } else {

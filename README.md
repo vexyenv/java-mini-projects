@@ -11,6 +11,7 @@ Each folder in this repository is a self-contained project designed to focus on 
 |----------------|------------------------------------|
 | `login-system` | A simple console-based login system that validates user credentials. |
 | `simple-calculator` | A simple console-based text calculator. |
+| `interest-calculator` | A simple console-based interest calculator containing both SI & CI. |
 
 ---
 

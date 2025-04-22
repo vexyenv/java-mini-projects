@@ -7,18 +7,18 @@ Each folder in this repository is a self-contained project designed to focus on 
 
 ## 📁 Projects
 
-| Project Name   | Description                        |
-|----------------|------------------------------------|
-| `login-system` | A simple console-based login system that validates user credentials. |
-| `simple-calculator` | A simple console-based text calculator. |
-| `interest-calculator` | A simple console-based interest calculator containing both SI & CI. |
+| Project Name        | Description                                                            |
+|---------------------|------------------------------------------------------------------------|
+| login-system        | A simple console-based login system that validates user credentials.   |
+| simple-calculator   | A simple console-based text calculator.                                |
+| interest-calculator | A simple console-based interest calculator containing both SI & CI.    |
 
 ---
 
 ## 📌 Tech Stack
 
-- Java (JDK 24)
-- IDE: IntelliJ IDEA
+- Java (JDK 24)  
+- IDE: IntelliJ IDEA  
 - Command-line (for compilation & running)
 
 ---

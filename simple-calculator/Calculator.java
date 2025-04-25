@@ -7,8 +7,7 @@ public class Calculator {
         System.out.println("------------------");
         System.out.println("Calculator");
 
-        for (int i = 1;; i++) {
-            System.out.println("Calculation #" + i);
+        while (true) {
             System.out.print("Enter a number: ");
             double numA = sc.nextDouble();
             System.out.print("Enter another number: ");
@@ -44,5 +43,7 @@ public class Calculator {
                 break;
             }
         }
+
+        sc.close();
     }
 }

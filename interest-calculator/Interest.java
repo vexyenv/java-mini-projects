@@ -6,7 +6,7 @@ public class Interest {
         System.out.println("-----------------------------------");
         System.out.println("Interest Calculator");
 
-        for (int j = 1;; j++) {
+        while (true) {
             System.out.print("Enter principal amount: ");
             double principal = sc.nextDouble();
             System.out.print("Enter rate of interest: ");

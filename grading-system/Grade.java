@@ -7,7 +7,7 @@ public class Grade {
         System.out.println("----------------------------------------");
         System.out.println("Grading System (Marks out of 100)");
 
-        for (int j = 1;; j++) {
+        while (true) {
             System.out.print("Enter number of subjects: ");
             int sub = sc.nextInt();
 

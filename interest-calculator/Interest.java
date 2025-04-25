@@ -3,49 +3,55 @@ import java.util.Scanner;
 public class Interest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("-----------------------------------");
-        System.out.println("Interest Calculator");
 
         while (true) {
+            System.out.println("---------------------");
+            System.out.println("Interest Calculator");
+
             System.out.print("Enter principal amount: ");
             double principal = sc.nextDouble();
-            System.out.print("Enter rate of interest: ");
+            System.out.print("Enter rate (in %): ");
             double rate = sc.nextDouble();
-            System.out.print("Enter time in years: ");
+            System.out.print("Enter time (in years): ");
             double time = sc.nextDouble();
 
-            System.out.print("Choose type of interest (Simple[SI]/Compound[CI]): ");
-            String type = sc.next();
+            System.out.print("Choose SI/CI: ");
+            String option = sc.next();
 
-            if (type.equalsIgnoreCase("SI")) {
-                double SI = (principal * rate * time) / 100;
-                System.out.println("Interest: " + SI);
-                System.out.println("Final amount: " + (principal + SI));
-            } else if (type.equalsIgnoreCase("CI")) {
-                double amount = principal;
-                double rateFraction = rate / 100;
-
-                for (int i = 1; i <= time; i++) {
-                    amount = amount * (1 + rateFraction);
-                }
-
-                double CI = amount - principal;
-                System.out.println("Interest: " + CI);
-                System.out.println("Final amount: " + amount);
-            } else {
-                System.out.println("Invalid Input!");
+            if (option.equalsIgnoreCase("SI")) {
+                simpleInterest(principal, rate, time);
+            } else if (option.equalsIgnoreCase("CI")) {
+                compoundInterest(principal, rate, time);
             }
 
-            System.out.println("-----------------------------------");
+            System.out.println("---------------------");
 
-            System.out.print("Do you want to continue? [yes (y)/no (n)]: ");
-            String option = sc.next();
-            if (option.equalsIgnoreCase("no") || option.equalsIgnoreCase("n")) {
-                System.out.println("Calculator has been closed.");
+            System.out.print("Do you want to exit (Yes[y]/No[n]): ");
+            String quit = sc.next();
+
+            if (quit.equalsIgnoreCase("Yes") || quit.equalsIgnoreCase("y")) {
                 break;
             }
         }
+    }
 
-        sc.close();
+    public static void simpleInterest(double principal, double rate, double time) {
+        double SI = (principal * rate * time) / 100;
+        System.out.println("Interest: " + SI);
+        System.out.println("Final amount: " + (principal + SI));
+    }
+
+    public static void compoundInterest(double principal, double rate, double time) {
+        double r = rate / 100;
+        double amount = principal;
+
+        for (int i = 1; i <= time; i++) {
+            amount = amount * (1 + r);
+        }
+
+        double compoundInterest = amount - principal;
+
+        System.out.println("Compound Interest: "+ compoundInterest);
+        System.out.println("Total Amount: "+ amount);
     }
 }

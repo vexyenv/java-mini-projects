@@ -7,12 +7,13 @@ Each folder in this repository is a self-contained project designed to focus on 
 
 ## 📁 Projects
 
-| Project Name        | Description                                                            |
-|---------------------|------------------------------------------------------------------------|
-| login-system        | A simple console-based login system that validates user credentials.   |
-| simple-calculator   | A simple console-based text calculator.                                |
-| interest-calculator | A simple console-based interest calculator containing both SI & CI.    |
-| grade-calculator | A simple console-based grade calculator.    |
+| Project Name         | Description                                                          |
+|----------------------|----------------------------------------------------------------------|
+| login-system         | A simple console-based login system that validates user credentials. |
+| simple-calculator    | A simple console-based text calculator.                              |
+| interest-calculator  | A simple console-based interest calculator containing both SI & CI.  |
+| grade-calculator     | A simple console-based grade calculator.                             |
+| multiplication-table | A simple console-based multiplication table generator.               |
 
 
 ---
@@ -30,7 +31,7 @@ Each folder in this repository is a self-contained project designed to focus on 
 Each project is designed to help reinforce fundamental Java programming skills, such as:
 
 - Input handling using `Scanner`
-- Using `for` & `while` loops
+- Using `for` & `while` loops, method implementation
 - String comparison and conditional logic
 - Project structuring and naming conventions
 - Command-line compilation and execution

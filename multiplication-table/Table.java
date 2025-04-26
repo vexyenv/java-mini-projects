@@ -37,7 +37,7 @@ public class Table {
         sc.close();
     }
 
-    public static void printTable(int num, int range) {
+    static void printTable(int num, int range) {
         for (int i = 1; i <= range; i++) {
             System.out.println(num + " * " + i + " = " + (num * i));
         }

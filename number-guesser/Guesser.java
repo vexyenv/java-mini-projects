@@ -8,16 +8,38 @@ public class Guesser {
         System.out.println("🎯 Welcome to the Number Guessing Game!");
 
         while (true) {
-            int targetNum = (int) ((Math.random() * 100) + 1);
+
+            System.out.println("[Easy(1 - 100)/Medium(1 - 500)/Hard(1 - 1000)]");
+            System.out.print("Choose game mode: ");
+            String mode = sc.next();
+            int range = 0;
+            int noOfTries = 0;
+
+            if (mode.equalsIgnoreCase("Easy")) {
+                range = 100;
+                noOfTries = 10;
+            } else if (mode.equalsIgnoreCase("Medium")) {
+                range = 500;
+                noOfTries = 15;
+            } else if (mode.equalsIgnoreCase("Hard")) {
+                range = 1000;
+                noOfTries = 25;
+            } else {
+                System.out.println("Invalid Choice! Default mode: Medium");
+                range = 500;
+                noOfTries = 15;
+            }
+
+            int targetNum = (int) ((Math.random() * range) + 1);
             int guess = 0;
             int tries = 0;
 
-            System.out.println("I'm thinking of a number between 1 and 100...");
+            System.out.println("I'm thinking of a number between 1 and " + range);
 
-            while (guess != targetNum && tries < 10) {
+            while (guess != targetNum && tries < noOfTries) {
                 tries++;
                 System.out.println("Try #" + tries);
-                System.out.print("Guess the number (1 - 100): ");
+                System.out.print("Guess the number (1 - " + range + "): ");
                 guess = sc.nextInt();
 
                 if (guess > targetNum) {

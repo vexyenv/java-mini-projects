@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Calculator {
@@ -7,13 +8,15 @@ public class Calculator {
         System.out.println("------------------");
         System.out.println("Calculator");
 
+        String[] operation = {"+", "-", "/", "*", "%"};
+
         while (true) {
             System.out.print("Enter a number: ");
             double numA = sc.nextDouble();
             System.out.print("Enter another number: ");
             double numB = sc.nextDouble();
             System.out.println("[Add, Subtract, Divide, Multiply, Remainder]");
-            System.out.print("Choose operator [+,-,/,*,%]: ");
+            System.out.print("Choose operation " + Arrays.toString(operation) + ":");
             String operator = sc.next();
 
             switch (operator) {
@@ -27,10 +30,14 @@ public class Calculator {
                     System.out.println("Product = " + (numA * numB));
                     break;
                 case "/":
-                    System.out.println("Quotient = " + (numA + numB));
+                    if (numA == 0 || numB == 0) {
+                        System.out.println("Cannot divide by 0");
+                    } else {
+                        System.out.println("The quotient = " + (numA / numB));
+                    }
                     break;
                 case "%":
-                    System.out.println("Remainder = " + (numA + numB));
+                    System.out.println("Remainder = " + (numA % numB));
                     break;
                 case "add":
                     System.out.println("Sum = " + (numA + numB));
@@ -42,10 +49,14 @@ public class Calculator {
                     System.out.println("Product = " + (numA * numB));
                     break;
                 case "divide":
-                    System.out.println("Quotient = " + (numA + numB));
+                    if (numA == 0 || numB == 0) {
+                        System.out.println("Cannot divide by 0");
+                    } else {
+                        System.out.println("The quotient = " + (numA / numB));
+                    }
                     break;
                 case "remainder":
-                    System.out.println("Remainder = " + (numA + numB));
+                    System.out.println("Remainder = " + (numA % numB));
                     break;
                 default:
                     System.out.println("Invalid Operator!");

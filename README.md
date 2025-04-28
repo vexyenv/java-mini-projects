@@ -33,6 +33,7 @@ Each project is designed to help reinforce fundamental Java programming skills, 
 
 - Input handling using `Scanner`
 - Using `for` & `while` loops, method implementation
+- Usage of arrays
 - String comparison and conditional logic
 - Project structuring and naming conventions
 - Command-line compilation and execution

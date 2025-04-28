@@ -7,14 +7,15 @@ Each folder in this repository is a self-contained project designed to focus on 
 
 ## 📁 Projects
 
-| Project Name         | Description                                                          |
-|----------------------|----------------------------------------------------------------------|
+| Project Name         | Description                                                        |
+|----------------------|--------------------------------------------------------------------|
 | login-system         | A simple console-based login system that validates user credentials. |
-| simple-calculator    | A simple console-based text calculator.                              |
-| interest-calculator  | A simple console-based interest calculator containing both SI & CI.  |
-| grade-calculator     | A simple console-based grade calculator.                             |
-| multiplication-table | A simple console-based multiplication table generator.               |
-| guessing-game        | A simple console-based number guessing game.                         |
+| simple-calculator    | A simple console-based text calculator.                            |
+| interest-calculator  | A simple console-based interest calculator containing both SI & CI. |
+| grade-calculator     | A simple console-based grade calculator.                           |
+| multiplication-table | A simple console-based multiplication table generator.             |
+| guessing-game        | A simple console-based number guessing game.                       |
+| word-analyzer        | A simple console-based word analyzer program.                      |
 
 
 ---

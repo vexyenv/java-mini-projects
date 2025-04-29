@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Guesser {
@@ -8,8 +9,8 @@ public class Guesser {
         System.out.println("🎯 Welcome to the Number Guessing Game!");
 
         while (true) {
-
-            System.out.println("[Easy(1 - 100)/Medium(1 - 500)/Hard(1 - 1000)]");
+            String[] difficulty = {"[Easy(1 - 100)", "Medium(1 - 500)", "Hard(1 - 1000)]"};
+            System.out.println(Arrays.toString(difficulty));
             System.out.print("Choose game mode: ");
             String mode = sc.next();
             int range = 0;

@@ -4,6 +4,8 @@ public class Bank {
 
     static String user = "";
     static int balance = 0;
+    static String password = "";
+    static boolean isLoggedIn = false;
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -18,10 +20,12 @@ public class Bank {
             System.out.println("2. Deposit Money");
             System.out.println("3. Withdraw Money");
             System.out.println("4. Show Balance");
-            System.out.println("5. Exit");
+            System.out.println("5. Access Account");
+            System.out.println("6. Log Out");
+            System.out.println("7. Exit");
             System.out.println();
 
-            System.out.println("Choose your option [1 - 5]");
+            System.out.println("Choose your option [1 - 7]");
             System.out.print("> ");
             option = scn.nextInt();
             scn.nextLine();
@@ -40,32 +44,57 @@ public class Bank {
                     showBalance(scn);
                     break;
                 case 5:
-                    System.out.println("Thank you for using banking system");
+                    accessAccount(scn);
+                    break;
+                case 6:
+                    if (isLoggedIn) {
+                        isLoggedIn = false;
+                        System.out.println("You have been logged out");
+                    } else {
+                        System.out.println("You are not logged in");
+                    }
+                    break;
+                case 7:
+                    System.out.println("Thanks for using Banking System!");
                     break;
             }
-        } while (option != 5);
+        } while (option != 7);
     }
 
      static void createAccount(Scanner scn) {
         System.out.print("Enter account holder name: ");
         user = scn.nextLine();
+        System.out.print("Enter password: ");
+        password = scn.next();
         balance = 0;
 
         System.out.println("Account created for holder: " + user);
     }
 
     static void depositMoney(Scanner scn) {
+        if (!isLoggedIn) {
+            System.out.println("Please Login before!");
+            return;
+        }
+
         System.out.print("Enter amount to deposit: ");
         int depositAmount = scn.nextInt();
 
         if (depositAmount > 0) {
+            System.out.println(depositAmount + " amount deposited");
             balance += depositAmount;
+            System.out.println("Balance = " + balance);
         } else {
             System.out.println("Enter valid amount to deposit!");
         }
     }
 
     static void withdrawMoney(Scanner scn) {
+        if (!isLoggedIn) {
+            System.out.println("Please Login before!");
+            return;
+        }
+
         System.out.print("Enter amount to withdraw: ");
         int withdrawAmount = scn.nextInt();
 
@@ -80,7 +109,27 @@ public class Bank {
     }
 
     static void showBalance(Scanner scn) {
+        if (!isLoggedIn) {
+            System.out.println("Please Login before!");
+            return;
+        }
+
         System.out.println("Account holder " + user);
         System.out.println("You currently have " + balance);
+    }
+
+    static void accessAccount(Scanner scn) {
+        System.out.println("Access your account");
+        System.out.print("Enter username: ");
+        String username = scn.nextLine();
+        System.out.print("Enter password: ");
+        String pass = scn.nextLine();
+
+        if (username.equalsIgnoreCase(user) && pass.equals(password)) {
+            System.out.println("Logged In");
+            isLoggedIn = true;
+        } else {
+            System.out.println("Incorrect Input!");
+        }
     }
 }

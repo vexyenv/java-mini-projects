@@ -16,6 +16,7 @@ public class Bank {
         int option;
 
         do {
+            System.out.println("========================");
             System.out.println("1. Create Account");
             System.out.println("2. Deposit Money");
             System.out.println("3. Withdraw Money");
@@ -23,6 +24,7 @@ public class Bank {
             System.out.println("5. Access Account");
             System.out.println("6. Log Out");
             System.out.println("7. Exit");
+            System.out.println("========================");
             System.out.println();
 
             System.out.println("Choose your option [1 - 7]");

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Bank {
 
     static String user = "";
-     static int balance = 0;
+    static int balance = 0;
     static String password = "";
     static boolean isLoggedIn = false;
 

@@ -42,13 +42,7 @@ public class Interest {
     }
 
     public static void compoundInterest(double principal, double rate, double time) {
-        double r = rate / 100;
-        double amount = principal;
-
-        for (int i = 1; i <= time; i++) {
-            amount = amount * (1 + r);
-        }
-
+        double amount = principal * Math.pow(1 + rate, time);
         double compoundInterest = amount - principal;
 
         System.out.println("Compound Interest: "+ compoundInterest);

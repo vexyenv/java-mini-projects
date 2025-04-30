@@ -27,6 +27,7 @@ public class GradeTracker {
         System.out.println();
 
         int action;
+
         do {
             System.out.println("1. View Class Average");
             System.out.println("2. View Topper");
@@ -55,6 +56,9 @@ public class GradeTracker {
             System.out.println();
 
         } while (action != 4);
+
+        System.out.println("[-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-]");
+        scn.close();
     }
 
     public static void classAvg(int[] marks, int numStudents) {

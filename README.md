@@ -17,6 +17,7 @@ Each folder in this repository is a self-contained project designed to focus on 
 | guessing-game        | A simple console-based number guessing game.                         |
 | word-analyzer        | A simple console-based word analyzer program.                        |
 | banking-system       | A simple console-based banking system program.                       |
+| grade-tracker        | A simple console-based grade tracking program.                       |
 
 
 ---

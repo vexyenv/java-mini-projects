@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Bank {
 
     static String user = "";
+    static int tax = 15;
     static int balance = 0;
     static String password = "";
     static boolean isLoggedIn = false;
@@ -82,9 +83,12 @@ public class Bank {
         System.out.print("Enter amount to deposit: ");
         int depositAmount = scn.nextInt();
 
+        int taxedAmount = tax / 100 * depositAmount;
+        int finalAmount = depositAmount - taxedAmount;
+
         if (depositAmount > 0) {
-            System.out.println(depositAmount + " amount deposited");
-            balance += depositAmount;
+            System.out.println(finalAmount + " amount deposited");
+            balance += finalAmount;
             System.out.println("Balance = " + balance);
         } else {
             System.out.println("Enter valid amount to deposit!");

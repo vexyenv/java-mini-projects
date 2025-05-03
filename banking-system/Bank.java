@@ -132,7 +132,7 @@ public class Bank {
         String pass = scn.nextLine();
 
         if (username.equalsIgnoreCase(user) && pass.equals(password)) {
-            System.out.println("Logged In");
+            System.out.println("Logged In Successfully!");
             isLoggedIn = true;
         } else {
             System.out.println("Incorrect Input!");

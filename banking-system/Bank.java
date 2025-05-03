@@ -12,6 +12,7 @@ public class Bank {
         Scanner scn = new Scanner(System.in);
         System.out.println("[-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-]");
         System.out.println("[Banking System]");
+        System.out.println("Tax = 15% on all deposits");
         System.out.println();
 
         int option;

@@ -7,7 +7,7 @@ Each folder in this repository is a self-contained project designed to focus on 
 
 ## 📁 Projects
 
-| Project Name         | Description                                                          |
+| Project Name (Easy)  | Description                                                          |
 |----------------------|----------------------------------------------------------------------|
 | login-system         | A simple console-based login system that validates user credentials. |
 | simple-calculator    | A simple console-based text calculator.                              |
@@ -19,6 +19,10 @@ Each folder in this repository is a self-contained project designed to focus on 
 | banking-system       | A simple console-based banking system program.                       |
 | grade-tracker        | A simple console-based grade tracking program.                       |
 
+
+| Project Name (Intermediate)  | Description                                                   |
+|------------------------------|---------------------------------------------------------------|
+| student-management-system    | An intermediate console-based student management system       |
 
 ---
 
@@ -37,6 +41,7 @@ Each project is designed to help reinforce fundamental Java programming skills, 
 - Input handling using `Scanner`
 - Using `for` & `while` loops, method implementation
 - Usage of arrays
+- Implementation of constructors & `this` keyword
 - String comparison and conditional logic
 - Project structuring and naming conventions
 - Command-line compilation and execution

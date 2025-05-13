@@ -20,11 +20,11 @@ Each folder in this repository is a self-contained project designed to focus on 
 | word-analyzer        | A simple console-based word analyzer program.                        |
 | banking-system       | A simple console-based banking system program.                       |
 | grade-tracker        | A simple console-based grade tracking program.                       |
-
-
-| Project Name (Intermediate)  | Description                                                   |
-|------------------------------|---------------------------------------------------------------|
-| student-management-system    | An intermediate console-based student management system       |
+                                                                                                
+                                                                                                
+| Project Name (Intermediate)  | Description                                                  |
+|------------------------------|--------------------------------------------------------------|
+| student-management-system    | An intermediate console-based student management system      |
 
 ---
 

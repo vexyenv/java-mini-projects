@@ -1,3 +1,5 @@
+---
+
 # Mini Projects
 
 A collection of small, hands-on Java mini-projects created while learning the language.  
@@ -46,3 +48,5 @@ Each project is designed to help reinforce fundamental Java programming skills, 
 - Project structuring and naming conventions
 - Command-line compilation and execution
 - Version control with Git & GitHub
+
+---

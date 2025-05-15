@@ -44,18 +44,25 @@ public class Analyzer {
         int choice = scn.nextInt();
         System.out.println();
 
-        if (choice == 1) {
-            countChar(sentence);
-        } else if (choice == 2) {
-            countWords(sentence);
-        } else if (choice == 3) {
-            vowelsAndConsonants(sentence);
-        } else if (choice == 4) {
-            palindrome(sentence);
-        } else if (choice == 5) {
-            printWords(sentence);
-        } else {
-            System.out.println("Invalid Choice!");
+        switch (choice) {
+            case 1:
+                countChar(sentence);
+                break;
+            case 2:
+                countWords(sentence);
+                break;
+            case 3:
+                vowelsAndConsonants(sentence);
+                break;
+            case 4:
+                palindrome(sentence);
+                break;
+            case 5:
+                printWords(sentence);
+                break;
+            default:
+                System.out.println("Invalid Input!");
+                break;
         }
     }
 

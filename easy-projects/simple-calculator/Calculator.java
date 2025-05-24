@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
 
         System.out.println("------------------");
         System.out.println("Calculator");
@@ -12,12 +12,12 @@ public class Calculator {
 
         while (true) {
             System.out.print("Enter a number: ");
-            double numA = sc.nextDouble();
+            double numA = scn.nextDouble();
             System.out.print("Enter another number: ");
-            double numB = sc.nextDouble();
+            double numB = scn.nextDouble();
             System.out.println("[Add, Subtract, Divide, Multiply, Remainder]");
             System.out.print("Choose operation " + Arrays.toString(operation) + ":");
-            String operator = sc.next();
+            String operator = scn.next();
 
             switch (operator) {
                 case "+":
@@ -66,13 +66,13 @@ public class Calculator {
             System.out.println("------------------");
 
             System.out.print("Do you want to continue? [yes (y)/no (n)]: ");
-            String option = sc.next();
+            String option = scn.next();
             if (option.equalsIgnoreCase("no") || option.equalsIgnoreCase("n")) {
                 System.out.println("Calculator has been closed.");
                 break;
             }
         }
 
-        sc.close();
+        scn.close();
     }
 }
